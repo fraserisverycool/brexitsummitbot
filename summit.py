@@ -30,4 +30,5 @@ class Summit:
 
     def remove_participant(self, participant):
         print("Removing participant: " + participant)
-        self.participants.remove(participant)
+        if participant in self.participants:
+            self.participants.remove(participant)
